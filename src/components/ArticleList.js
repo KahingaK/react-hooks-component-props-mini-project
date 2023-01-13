@@ -1,16 +1,16 @@
 import React from "react";
 import Article from "./Article";
 
-function ArticleList({blogPosts}) {
+function ArticleList({bPosts}) {
   return (
     <main>{
-         blogPosts.bPosts.map((post)=>{
+         bPosts.map((post)=>{
             return (<Article
-                key={posts.id}
-                aTitle={posts.title}
-                aDate={posts.date}
-                aPreview={posts.preview}
-                aMinutes={posts.minutes}
+                key={bPosts.id}
+                aTitle={bPosts.title}
+                aDate={bPosts.date}
+                aPreview={bPosts.preview}
+                aMinutes={bPosts.minutes}
             />)
          })
     }

@@ -5,7 +5,7 @@ function Header(blogName) {
     <div>
       Header
       <header>
-        <h1>{blogName.name}</h1>
+        <h1>{blogName}</h1>
       </header>
     </div>
   );

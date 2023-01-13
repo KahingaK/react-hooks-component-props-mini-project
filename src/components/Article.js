@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Article({title, date = "January 1, 1970" , preview}) {
+function Article({aTitle, aDate = "January 1, 1970" , aPreview}) {
   return (
     <article>
-        <h3> {title.aTitle}</h3>
+        <h3> {aTitle}</h3>
         <small>
-            {date.aDate}
+            {aDate}
         </small>
-        <p>{preview.aPreview}</p>
+        <p>{aPreview}</p>
     </article>  )
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-function About({image = "https://via.placeholder.com/215 " , text}) {
+function About({Bimage = "https://via.placeholder.com/215 " , aboutText}) {
   return (
     <aside>
-      <img src={image.Bimage} alt= "blog logo" />
-      <p>{text.aboutText}</p>
+      <img src={Bimage} alt= "blog logo" />
+      <p>{aboutText}</p>
     </aside>
   );
 }
