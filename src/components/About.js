@@ -1,12 +1,12 @@
-import React from "react";
+import react from "react";
 
-function About({Bimage = "https://via.placeholder.com/215 " , aboutText}) {
-  return (
+function About({about, image ="https://via.placeholder.com/215"}){
+    return(
     <aside>
-      <img src={Bimage} alt= "blog logo" />
-      <p>{aboutText}</p>
-    </aside>
-  );
-}
+        <img src={image} alt="blog logo"></img>
+        <p>{about}</p>
 
+    </aside>
+    );
+}
 export default About;

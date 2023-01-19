@@ -1,8 +1,8 @@
 import React from "react";
 import blogData from "../data/blog";
-import ArticleList from "./ArticleList.js"
-import About from "./About.js"
-import Header from "./Header.js"
+import Header from "./Header";
+import About from "./About";
+import ArticleList from "./ArticleList";
 
 
 console.log(blogData);
@@ -10,9 +10,10 @@ console.log(blogData);
 function App() {
   return (
     <div className="App">
-    <Header blogName = {blogData.name}/>
-    <ArticleList bPosts = {blogData.posts}/>
-    <About bImage = {blogData.image} aboutText = {blogData.about} />
+      <About image={blogData.image} about={blogData.about}/>
+      <Header name={blogData.name}/>
+      <ArticleList posts={blogData.posts}/>
+      
     </div>
   );
 }

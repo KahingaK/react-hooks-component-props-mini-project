@@ -1,14 +1,19 @@
-import React from 'react'
+import react from 'react'
 
-function Article({aTitle, aDate = "January 1, 1970" , aPreview}) {
+
+
+function Article({ title, date = "January 1, 1970", preview}) {
+  
+
   return (
     <article>
-        <h3> {aTitle}</h3>
-        <small>
-            {aDate}
-        </small>
-        <p>{aPreview}</p>
-    </article>  )
+      <h3>{title}</h3>
+      <small>
+        {date} 
+      </small>
+      <p>{preview}</p>
+    </article>
+  );
 }
 
-export default Article
+export default Article;
